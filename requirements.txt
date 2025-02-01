@@ -1,4 +1,3 @@
-gunicorn==20.1.0
-Flask==2.2.2
-instaloader==4.9.10
-smtplib==1.0
+Flask
+instaloader
+gunicorn
