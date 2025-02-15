@@ -6,9 +6,14 @@ from googleapiclient.discovery import build
 
 app = Flask(__name__)
 
+
 # Get database URL and YouTube API key from environment variables
 DATABASE_URL = os.getenv("postgresql://news_data_rnj1_user:Riu6PH7TV9B3YeXSmUFgcNMvs2JOr4oa@dpg-cuo46nl2ng1s73e2oo20-a/news_data_rnj1")
 api_key = os.getenv("AIzaSyDIRMzgP0qcR75TAv4hIgSovMeaOOeIkcU")
+print("AIzaSyDIRMzgP0qcR75TAv4hIgSovMeaOOeIkcU:", api_key)  # <-- Add this line
+
+# Build YouTube API client
+youtube = build("youtube", "v3", developerKey=api_key)
 
 # YouTube channels
 channels = {
