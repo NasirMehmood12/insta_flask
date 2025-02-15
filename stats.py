@@ -1,13 +1,14 @@
+from flask import Flask, jsonify
 import psycopg2
 import os
 import datetime
 from googleapiclient.discovery import build
 
-# Get database credentials from Render environment variables
-DATABASE_URL = os.getenv("DATABASE_URL")
+app = Flask(__name__)
 
-# YouTube API key (store in Render's environment variables)
-api_key = os.getenv("YOUTUBE_API_KEY")
+# Get database URL and YouTube API key from environment variables
+DATABASE_URL = os.getenv("postgresql://news_data_rnj1_user:Riu6PH7TV9B3YeXSmUFgcNMvs2JOr4oa@dpg-cuo46nl2ng1s73e2oo20-a/news_data_rnj1")
+api_key = os.getenv("AIzaSyDIRMzgP0qcR75TAv4hIgSovMeaOOeIkcU")
 
 # YouTube channels
 channels = {
@@ -80,5 +81,29 @@ def save_to_database(data):
     except Exception as e:
         print(f"Database error: {e}")
 
-# Run the script once
+# API route to fetch stored data
+@app.route('/youtube-stats', methods=['GET'])
+def get_stats():
+    """Fetches YouTube stats from the database"""
+    try:
+        conn = psycopg2.connect(DATABASE_URL)
+        cursor = conn.cursor()
+
+        cursor.execute("SELECT * FROM youtube_stats ORDER BY date DESC LIMIT 10;")
+        rows = cursor.fetchall()
+        conn.close()
+
+        data = [
+            {"id": row[0], "date": row[1], "channel": row[2], "views": row[3], "subscribers": row[4]}
+            for row in rows
+        ]
+        return jsonify(data)
+
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+# Run the script once to fetch and save data
 fetch_youtube_stats()
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=8000)
