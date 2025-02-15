@@ -21,7 +21,7 @@ jobs:
         run: pip install google-api-python-client pandas
 
       - name: Run YouTube Stats Script
-        run: python fetch_youtube_stats.py
+        run: python stats.py
 
       - name: Commit and Push CSV
         run: |
