@@ -13,7 +13,12 @@ channels = {
     "UCjf9mzqsb9lH7yd5OcBqzsA": "Samma Entertainment",
     "UCJekW1Vj5fCVEGdye_mBN6Q": "Samma News",
     "UCaxR-D8FjZ-2otbU0_Y2grg": "Dawn news",
-    "UCTur7oM6mLL0rM2k0znuZpQ": "Express News"
+    "UCTur7oM6mLL0rM2k0znuZpQ": "Express News",
+    "UCMmpLL2ucRHAXbNHiCPyIyg": "ARY News",
+    "UC4JCksJF76g_MdzPVBJoC3Q": "ARY Digital",
+    "UCnMBV5Iw4WqKILKue1nP6Hg": "Duniya News",
+    "UCgBAPAcLsh_MAPvJprIz89w": "Aaj News"
+    
 }
 
 # Build YouTube Data API client
