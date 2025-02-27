@@ -4,7 +4,7 @@ import datetime
 import os
 
 # Replace with your YouTube API key
-api_key = "AIzaSyDIRMzgP0qcR75TAv4hIgSovMeaOOeIkcU"
+api_key = "AIzaSyBwZV9X6a5caInCh60K7SFmjWetA-vUf5Q"
 
 # Dictionary of YouTube channel IDs and their names
 channels = {
