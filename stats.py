@@ -17,7 +17,11 @@ channels = {
     "UCMmpLL2ucRHAXbNHiCPyIyg": "ARY News",
     "UC4JCksJF76g_MdzPVBJoC3Q": "ARY Digital",
     "UCnMBV5Iw4WqKILKue1nP6Hg": "Duniya News",
-    "UCgBAPAcLsh_MAPvJprIz89w": "Aaj News"
+    "UCgBAPAcLsh_MAPvJprIz89w": "Aaj News",
+    "UCsgC5cbz3DE2Shh34gNKiog": "92 News",
+    "UC35KuZBNIj4S5Ls0yjY-UHQ": "GNN News",
+    "UCElJZvY_RVra6qjD8WSQYog": "Public News",
+    "UCcmpeVbSSQlZRvHfdC-CRwg": "24 News hd"
     
 }
 
