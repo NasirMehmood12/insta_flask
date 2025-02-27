@@ -21,7 +21,10 @@ channels = {
     "UCsgC5cbz3DE2Shh34gNKiog": "92 News",
     "UC35KuZBNIj4S5Ls0yjY-UHQ": "GNN News",
     "UCElJZvY_RVra6qjD8WSQYog": "Public News",
-    "UCcmpeVbSSQlZRvHfdC-CRwg": "24 News hd"
+    "UCcmpeVbSSQlZRvHfdC-CRwg": "24 News hd",
+    "UCz2yxQJZgiB_5elTzqV7FiQ": "Bol News",
+    "UC0Um3pnZ2WGBEeoA3BX2sKw": "Hum News",
+    "UCAsvFcpUQegneSh0QAUd64A": "Neo news"
     
 }
 
